@@ -28,10 +28,7 @@ export class MovieListComponent implements OnInit {
         this.listMovies = Array.from(this.moviesMap.values());
         const control = this.movieListFormGroup.controls.listFormMovies as FormArray;
         console.log(control);
-        control.clear();
-        this.listMovies.forEach((m) => {
-          control.push(new FormControl(m));
-        });
+        control.push(new FormControl((this.listMovies[this.listMovies.length - 1])));
       }
     });
   }
