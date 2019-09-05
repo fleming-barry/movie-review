@@ -8,22 +8,22 @@
     <p>
       <mat-form-field>
         <mat-label>Type</mat-label>
-        <mat-select>
-          <mat-option *ngFor="let type of types" [value]="type.toLowerCase()">
+        <mat-select formControlName="movieType">
+          <mat-option *ngFor="let type of types" [value]="type.toLowerCase()" >>
             {{type}}
           </mat-option>
         </mat-select>
       </mat-form-field>
     </p>
-    <!--  <mat-form-field >-->
-    <!--    <mat-label>Year</mat-label>-->
-    <!--    <input matInput placeholder="Year" [formControl]="yearCtrl" [matAutocomplete]="auto" formControlName="year">-->
-    <!--    <mat-autocomplete #auto="matAutocomplete">-->
-    <!--      <mat-option *ngFor="let year of filteredYears | async" [value]="year">-->
-    <!--        {{year}}-->
-    <!--      </mat-option>-->
-    <!--    </mat-autocomplete>-->
-    <!--  </mat-form-field>-->
+    <mat-form-field>
+      <mat-label>Year</mat-label>
+      <mat-select formControlName="year">
+        <mat-option *ngFor="let year of years" [value]="year">
+          {{year}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
     <p>
       <button type="submit" mat-button>Search</button>
     </p>
