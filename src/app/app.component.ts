@@ -1,5 +1,5 @@
 import {Component, NgModule} from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+import {HttpClientModule} from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     HttpClientModule
   ],
-  providers: [ HttpClientModule]
+  providers: [HttpClientModule]
   // ...
 })
 export class AppComponent {

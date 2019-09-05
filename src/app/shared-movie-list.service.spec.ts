@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { SharedMovieListService } from './shared-movie-list.service';
+import {SharedMovieListService} from './shared-movie-list.service';
 
 describe('SharedMovieListService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));

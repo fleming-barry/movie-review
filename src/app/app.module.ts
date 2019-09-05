@@ -10,8 +10,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule, MatCardModule, MatListModule, MatSelectModule, MatToolbarModule} from '@angular/material';
 
-import { MovieDisplayComponent } from './movie-display/movie-display.component';
-import { MovieListComponent } from './movie-list/movie-list.component';
+import {MovieDisplayComponent} from './movie-display/movie-display.component';
+import {MovieListComponent} from './movie-list/movie-list.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +34,7 @@ import { MovieListComponent } from './movie-list/movie-list.component';
     MatCardModule,
     MatListModule
   ],
-  exports:  [
+  exports: [
     BrowserModule,
     ReactiveFormsModule,
     MatAutocompleteModule,

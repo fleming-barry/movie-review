@@ -4,4 +4,5 @@ export class Movie {
   imdbID: string;
   Type: string;
   Poster: string;
+  rank: number;
 }

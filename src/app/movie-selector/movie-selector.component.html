@@ -1,15 +1,15 @@
 <div>
-  <form [formGroup]="movieSelectForm" (ngSubmit)="onSubmit()">
+  <form (ngSubmit)="onSubmit()" [formGroup]="movieSelectForm">
     <p>
       <mat-form-field>
-        <input matInput placeholder="Movie Title" formControlName="movieTitle">
+        <input formControlName="movieTitle" matInput placeholder="Movie Title">
       </mat-form-field>
     </p>
     <p>
       <mat-form-field>
         <mat-label>Type</mat-label>
         <mat-select formControlName="movieType">
-          <mat-option *ngFor="let type of types" [value]="type.toLowerCase()" >
+          <mat-option *ngFor="let type of types" [value]="type.toLowerCase()">
             {{type}}
           </mat-option>
         </mat-select>
@@ -25,7 +25,7 @@
     </mat-form-field>
 
     <p>
-      <button type="submit" mat-button>Search</button>
+      <button mat-button type="submit">Search</button>
     </p>
   </form>
 </div>

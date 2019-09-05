@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Movie} from '../models/movie';
 import {SharedMovieListService} from '../shared-movie-list.service';
 
@@ -19,6 +19,7 @@ export class MovieDisplayComponent implements OnInit {
   onMovieList($event) {
     this.movies = $event;
   }
+
   addMovieToList(movie: Movie) {
     this.sharedMovieList.addMovieToList(movie);
   }

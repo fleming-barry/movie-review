@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { OmDbApiService } from './om-db-api.service';
+import {OmDbApiService} from './om-db-api.service';
 
 describe('AmdbapiService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
