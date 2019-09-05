@@ -1,0 +1,18 @@
+<div>
+  <button mat-button (click)="toggleList()">{{buttonName}}</button>
+  <div *ngIf="showList">
+    <form [formGroup]="movieListFormGroup" (ngSubmit)="createNewList()">
+      <p>
+        <mat-form-field>
+          <input matInput placeholder="List Title" formControlName="listFormTitle">
+        </mat-form-field>
+        <mat-list role="list" *ngFor="let movie of listMovies" formArrayName="listFormMovies">
+          <mat-list-item   >
+            {{movie.Title}}
+          </mat-list-item>
+        </mat-list>
+      </p>
+      <button type="submit" mat-button>Save</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap-grid.min.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.movie-list-title {
+  font-size: medium;
+}
+
+.movie-list-card.mat-card {
+  margin: 10px;
+}
+
+mat-card img {
+  object-fit: cover; /*this makes de image in src fit to the size of specified below*/
+  width: 100%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
+  height: 80%;
+}
+
+.md-unstyled-image {
+  max-width: 100%;
+  width: auto;
+  height: auto !important;
+}

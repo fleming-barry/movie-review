@@ -1,0 +1,19 @@
+<div class="row">
+  <mat-card class="col-sm-3">
+    <app-movie-selector (moviesRequestEvent)="onMovieList($event)"></app-movie-selector>
+    <app-movie-list></app-movie-list>
+  </mat-card>
+  <mat-card class="col-sm-9">
+    <div class="row">
+      <div class="col-12">
+        <div class="col-sm-4" style="float: left" *ngFor="let movie of movies">
+          <mat-card class="movie-list-card">
+            <mat-card-title class="movie-list-title">{{movie.Title}}</mat-card-title>
+            <img mat-card-lg-image src="{{movie.Poster}}" (click)="addMovieToList(movie)">
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </mat-card>
+</div>
+
